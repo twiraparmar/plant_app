@@ -26,20 +26,23 @@ class Body extends StatelessWidget {
               SizedBox(
                 width: size.width / 2,
                 height: 84,
-                child: FlatButton(
-                    shape: const RoundedRectangleBorder(
-                        borderRadius:
-                            BorderRadius.only(topRight: Radius.circular(20))),
+                child: TextButton(
+                    style: flatButtonStyle,
                     onPressed: () {},
-                    color: kPrimaryColor,
+                    // color: kPrimaryColor,
                     child: const Text(
                       "Buy Now",
                       style: TextStyle(color: Colors.white, fontSize: 16),
                     )),
               ),
               Expanded(
-                  child: FlatButton(
-                      onPressed: () {}, child: const Text("Description")))
+                  child: TextButton(
+                      //  style: flatButtonStyle,
+                      onPressed: () {},
+                      child: const Text(
+                        "Description",
+                        style: TextStyle(fontSize: 16),
+                      )))
             ],
           ),
         ],
